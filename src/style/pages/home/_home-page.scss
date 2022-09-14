@@ -1,0 +1,229 @@
+.home__banner-sujihealth {
+    background-color: #FFE6E6;
+    height: auto;
+    width: 100%;
+    padding-bottom: 435px;
+    height: 100vh;
+}
+
+.suji_health__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.suji-health__logo {
+    padding-top: 30px;
+
+    a {
+        svg {
+            width: 100%
+        }
+    }
+
+}
+
+.suji-health__paragraph {
+    max-width: 607px;
+    padding-top: 126px;
+
+    p {
+        font-size: 35px;
+        line-height: 40px;
+        color: $primary;
+        font-family: $font-1;
+        font-weight: $regular;
+        width: 100%;
+        margin: auto;
+        padding-bottom: 80px;
+    }
+}
+
+.suji-health__header {
+    padding-bottom: 48px;
+
+    .heading--h1 {
+        font-size: 159px;
+        line-height: 79px;
+        color: $secondary;
+        font-family: $font-2;
+        font-style: italic;
+        font-weight: 300;
+        margin: 0;
+    }
+}
+
+.submit-button {
+    padding-top: 48px;
+
+
+    .input-arrow--flex {
+        display: flex;
+        background-color: white;
+        border-radius: 51px;
+        width: 741px;
+        height: 101px;
+        border: 2px solid $secondary;
+
+        .mail-id--textbox {
+            display: flex;
+            align-items: center;
+            padding-left: 51px;
+            width: 75%;
+
+            input {
+
+                height: 100%;
+                width: 100%;
+                border: none;
+                color: $secondary;
+                font-size: 30px;
+                line-height: 79px;
+                font-family: $font-1;
+
+                &::placeholder {
+                    color: $secondary;
+                    font-size: 30px;
+                    line-height: 79px;
+                    font-family: $font-1;
+                }
+            }
+        }
+
+        .arrow__redirection {
+            width: 25%;
+            display: flex;
+            align-items: center;
+            border-left: 2px solid $secondary;
+            justify-content: center;
+            background-color: #AEE367;
+            border-radius: 0px 51px 51px 0px;
+
+            button {
+                background: transparent;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+                height: 100%;
+                color: transparent;
+                font-size: 0;
+            }
+        }
+
+
+    }
+}
+
+
+
+.loader {
+    text-align: center;
+}
+
+.loader span {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin: -280px 40px 54px -34px;
+    background: url("/static/leaf1.png");
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    -webkit-animation: loader 10s infinite linear;
+    -moz-animation: loader 10s infinite linear;
+}
+
+.loader span:nth-child(5n+5) {
+
+    -webkit-animation-delay: 1.3s;
+    -moz-animation-delay: 1.3s;
+}
+
+.loader span:nth-child(3n+2) {
+
+    -webkit-animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;
+}
+
+.loader span:nth-child(2n+5) {
+
+    -webkit-animation-delay: 1.7s;
+    -moz-animation-delay: 1.7s;
+}
+
+.loader span:nth-child(3n+10) {
+
+    -webkit-animation-delay: 2.7s;
+    -moz-animation-delay: 2.7s;
+}
+
+.loader span:nth-child(7n+2) {
+
+    -webkit-animation-delay: 3.5s;
+    -moz-animation-delay: 3.5s;
+}
+
+.loader span:nth-child(4n+5) {
+
+    -webkit-animation-delay: 5.5s;
+    -moz-animation-delay: 5.5s;
+}
+
+.loader span:nth-child(3n+7) {
+
+    -webkit-animation-delay: 8s;
+    -moz-animation-delay: 8s;
+}
+
+@-webkit-keyframes loader {
+    0% {
+        width: 80px;
+        height: 80px;
+        opacity: 1;
+
+        -webkit-transform: translate(0, 0px) rotateZ(0deg);
+    }
+
+    75% {
+        width: 80px;
+        height: 80px;
+        opacity: 1;
+
+        -webkit-transform: translate(100px, 600px) rotateZ(270deg);
+    }
+
+    100% {
+        width: 80px;
+        height: 80px;
+        opacity: 0;
+
+        -webkit-transform: translate(150px, 800px) rotateZ(360deg);
+    }
+}
+
+@-moz-keyframes loader {
+    0% {
+        width: 80px;
+        height: 80px;
+        opacity: 1;
+
+        -webkit-transform: translate(0, 0px) rotateZ(0deg);
+    }
+
+    75% {
+        width: 80px;
+        height: 80px;
+        opacity: 1;
+
+        -webkit-transform: translate(100px, 600px) rotateZ(270deg);
+    }
+
+    100% {
+        width: 80px;
+        height: 80px;
+        opacity: 0;
+
+        -webkit-transform: translate(150px, 800px) rotateZ(360deg);
+    }
+}
