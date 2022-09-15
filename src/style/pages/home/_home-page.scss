@@ -370,7 +370,7 @@
     }
 
     .suji-health__logo {
-        padding-top: 5px;
+        padding-top: 10px;
     }
 
     .suji-health__header {
@@ -403,6 +403,7 @@
             height: 60px;
 
             .mail-id--textbox {
+                padding-left: 20px;
 
                 input {
                     font-size: 18px;
@@ -418,6 +419,8 @@
             }
 
             .arrow__redirection {
+                width: 165px;
+
                 a {
                     button {
                         svg {
