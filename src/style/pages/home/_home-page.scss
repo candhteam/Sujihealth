@@ -4,16 +4,21 @@
     height: 100vh;
 }
 
+.container {
+    height: 100%;
+}
+
 .suji_health__wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     justify-content: center;
+    height: 100%;
 }
 
 .suji-health__logo {
-    padding-top: 30px;
+    // padding-top: 30px;
 
     a {
         svg {
@@ -63,7 +68,7 @@
         border-radius: 51px;
         width: 741px;
         height: 75px;
-        border: 2px solid $secondary;
+        border: 3px solid $secondary;
 
         .mail-id--textbox {
             display: flex;
@@ -94,7 +99,7 @@
             width: 95px;
             display: flex;
             align-items: center;
-            border-left: 2px solid $secondary;
+            border-left: 3px solid $secondary;
             justify-content: center;
             background-color: #AEE367;
             border-radius: 0px 51px 51px 0px;
@@ -110,6 +115,9 @@
                     width: 100%;
                     height: 100%;
 
+                    svg {
+                        width: 32px;
+                    }
                 }
             }
 
@@ -356,6 +364,11 @@
 }
 
 @media(max-width:$media-xs) {
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
     .suji-health__logo {
         padding-top: 5px;
     }
@@ -383,10 +396,39 @@
 
     .submit-button {
         padding-top: 30px;
+        padding-bottom: 160px;
 
         .input-arrow--flex {
-            width: 400px;
+            width: 320px;
             height: 60px;
+
+            .mail-id--textbox {
+
+                input {
+                    font-size: 18px;
+                    line-height: 29px;
+
+                    &::placeholder {
+
+                        font-size: 18px;
+                        line-height: 29px;
+
+                    }
+                }
+            }
+
+            .arrow__redirection {
+                a {
+                    button {
+                        svg {
+                            width: 22px;
+                        }
+                    }
+                }
+
+
+            }
         }
     }
+
 }
