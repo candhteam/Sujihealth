@@ -383,7 +383,7 @@
     }
 
     .suji-health__paragraph {
-        padding-top: 40px;
+        padding-top: 0px;
         max-width: 400px;
 
         p {
@@ -391,6 +391,16 @@
             line-height: 30px;
             padding-bottom: 30px;
             width: 100%;
+        }
+    }
+
+    .suji-health__logo {
+        padding-top: 25px;
+
+        a {
+            svg {
+                width: 180px;
+            }
         }
     }
 
