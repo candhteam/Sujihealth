@@ -103,6 +103,21 @@
             justify-content: center;
             background-color: #AEE367;
             border-radius: 0px 51px 51px 0px;
+            background-image:
+                linear-gradient(to top, rgb(7, 7, 7) 50%, #AEE367 50%);
+
+            -webkit-background-clip: text, padding-box;
+            background-clip: text, padding-box;
+            background-size: 100% 200%;
+            background-position: top;
+            transition: background-position 0.2s ease-in-out;
+
+
+            &:hover {
+
+                background-position: bottom;
+
+            }
 
             a {
                 width: 100%;
@@ -115,16 +130,23 @@
                     width: 100%;
                     height: 100%;
 
-                    svg {
+                    .change-color {
                         width: 32px;
+                        // transition: .3s all;
+                        // transform-origin: 50% 50%;
+
+
+                        &:hover {
+
+                            stroke: #ffffff;
+                        }
                     }
                 }
             }
-
-
         }
     }
 }
+
 
 
 .loader {
@@ -138,7 +160,7 @@
     display: inline-block;
     width: 80px;
     height: 80px;
-    margin: -280px 60px 54px -40px;
+    margin: -300px 60px 54px -40px;
     background: url("/static/leaf1.png");
     background-repeat: no-repeat;
     -webkit-animation: loader 10s infinite linear;
