@@ -68,7 +68,10 @@
         border-radius: 51px;
         width: 741px;
         height: 75px;
-        border: 3px solid $secondary;
+        border-left: 3px solid $secondary;
+        border-top: 3px solid $secondary;
+        border-bottom: 3px solid $secondary;
+        border-right: none;
 
         .mail-id--textbox {
             display: flex;
@@ -100,6 +103,7 @@
             display: flex;
             align-items: center;
             border-left: 3px solid $secondary;
+            border-right: 3px solid $secondary;
             justify-content: center;
             background-color: #AEE367;
             border-radius: 0px 51px 51px 0px;
