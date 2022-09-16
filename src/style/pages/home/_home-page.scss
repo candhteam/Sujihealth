@@ -107,14 +107,14 @@
             justify-content: center;
             background-color: #AEE367;
             border-radius: 0px 51px 51px 0px;
-            background:
-                linear-gradient(to top, rgb(7, 7, 7) 50%, #AEE367 50%);
+            // background:
+            //     linear-gradient(to top, rgb(7, 7, 7) 50%, #AEE367 50%);
 
-            -webkit-background-clip: text, padding-box;
-            background-clip: text, padding-box;
-            background-size: 100% 200%;
-            background-position: top;
-            transition: background-position 0.2s ease-in-out;
+            // -webkit-background-clip: text, padding-box;
+            // background-clip: text, padding-box;
+            // background-size: 100% 200%;
+            // background-position: top;
+            // transition: background-position 0.2s ease-in-out;
 
 
             &:hover {
@@ -144,82 +144,6 @@
         }
     }
 }
-
-
-
-
-
-// .submit-button {
-//     max-width: 741px;
-
-//     height: 75px;
-
-//     form {
-//         display: flex;
-
-//         .mail-id--textbox {
-//             width: 646px;
-//             border-radius: 51px 0px 0px 51px;
-//             border: 3px solid $secondary;
-
-//             input {
-//                 width: 100%;
-//                 border: none;
-//                 color: $secondary;
-//                 font-size: 25px;
-//                 line-height: 79px;
-//                 font-family: $font-1;
-//                 border-radius: 51px 0px 0px 51px;
-
-//                 &::placeholder {
-//                     color: $secondary;
-//                     font-size: 25px;
-//                     line-height: 79px;
-//                     font-family: $font-1;
-//                 }
-//             }
-//         }
-//     }
-
-//     .arrow__redirection {
-//         width: 95px;
-//         display: flex;
-//         align-items: center;
-//         border: 3px solid $secondary;
-//         border-radius: 0px 51px 51px 0px;
-//         border-left: none;
-//         // background-color: #AEE367;
-//         background: url("/static/svg/arrowv.svg"), #AEE367;
-//         background-repeat: no-repeat;
-//         background-position: center center;
-//         background-size: 32px;
-//         background:
-//             linear-gradient(to top, rgb(7, 7, 7) 50%, #AEE367 50%);
-
-//         -webkit-background-clip: text, padding-box;
-//         background-clip: text, padding-box;
-//         background-size: 100% 200%;
-//         background-position: bottom;
-//         transition: background-position 0.2s ease-in-out;
-
-
-//         &:hover {
-
-//             background-position: top;
-//             background-image: url("/static/arrow-white.png");
-//             background-repeat: no-repeat;
-//             background-position: center center;
-//             background-size: 32px;
-//             background-color: #080808;
-//         }
-
-//         a {}
-//     }
-// }
-
-
-
-
 
 
 
@@ -539,6 +463,12 @@
 
 
             }
+        }
+    }
+
+    .loader {
+        .media__display--none {
+            display: none;
         }
     }
 
