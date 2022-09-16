@@ -107,14 +107,11 @@
             justify-content: center;
             background-color: #AEE367;
             border-radius: 0px 51px 51px 0px;
-            // background:
-            //     linear-gradient(to top, rgb(7, 7, 7) 50%, #AEE367 50%);
-
-            // -webkit-background-clip: text, padding-box;
-            // background-clip: text, padding-box;
-            // background-size: 100% 200%;
-            // background-position: top;
-            // transition: background-position 0.2s ease-in-out;
+            background:
+                linear-gradient(to top, rgb(7, 7, 7) 50%, #AEE367 50%);
+            background-size: 100% 200%;
+            background-position: top;
+            transition: background-position 0.2s ease-in-out;
 
 
             &:hover {
@@ -428,7 +425,7 @@
 
     .submit-button {
         padding-top: 30px;
-        padding-bottom: 160px;
+        // padding-bottom: 160px;
 
         .input-arrow--flex {
             width: 320px;
