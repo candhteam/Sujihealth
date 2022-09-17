@@ -94,17 +94,15 @@
         </div>
 
         <div class="submit-button">
-          <form action="">
+          <form method="POST"  name="google-sheet">
             <div class="input-arrow--flex">
               <div class="mail-id--textbox">
-                <input type="email" required placeholder="Your email address">
+                <input type="email" id="email" name="Email" placeholder="Your email address" required>
               </div>
               <div class="arrow__redirection">
-                <a href="thank-you.html" class="button">
-                  <!-- <button type="submit">
-
-                  </button> -->
-                </a>
+                <!-- <a href="./thank-you.html"> -->
+                  <input type="submit" value="Submit" name="submit" class="button">
+                <!-- </a> -->
               </div>
             </div>
           </form>
@@ -122,15 +120,23 @@
             </div>
           </form>
         </div> -->
-
-
-
-
-
       </div>
     </div>
   </section>
   <!-- --first section  ends -->
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwZ8UNyH1lyO31z2yLLCNc5hsx67RTdQCGVCNcQR1GdIVCEKh6RyGY9RJDitjsH0XrF/exec'
+    const form = document.forms['google-sheet']
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response =>  window.location.href = 'thank-you.html')
+        // .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
 </body>
 
 </html>
