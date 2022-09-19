@@ -143,7 +143,17 @@
     }
 }
 
+.mail__mail-id {
+    padding-top: 100px;
 
+    a {
+        font-size: 25px;
+        line-height: 79px;
+        color: $primary;
+        font-family: $font-1;
+
+    }
+}
 
 
 .loader {
