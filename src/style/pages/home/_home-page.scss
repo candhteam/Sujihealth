@@ -391,6 +391,15 @@
             height: 65px;
         }
     }
+
+    .mail__mail-id {
+        padding-top: 50px;
+
+        a {
+            font-size: 23px;
+            line-height: 35px;
+        }
+    }
 }
 
 @media(max-width:$media-xs) {
@@ -477,6 +486,15 @@
     .loader {
         .media__display--none {
             display: none;
+        }
+    }
+
+    .mail__mail-id {
+        padding-top: 30px;
+
+        a {
+            font-size: 20px;
+            line-height: 30px;
         }
     }
 
