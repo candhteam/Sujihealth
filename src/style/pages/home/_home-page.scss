@@ -151,6 +151,11 @@
         line-height: 79px;
         color: $primary;
         font-family: $font-1;
+        transition: 0.5s ease;
+
+        &:hover {
+            color: #000;
+        }
 
     }
 }
