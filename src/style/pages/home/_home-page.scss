@@ -152,10 +152,12 @@
         color: $primary;
         font-family: $font-1;
         transition: 0.5s ease;
+        text-underline-position: under;
 
         &:hover {
-            color: #000;
+            color: #ff002d;
         }
+
 
     }
 }
