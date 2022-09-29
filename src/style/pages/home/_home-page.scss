@@ -145,7 +145,10 @@
 
 .mail__mail-id {
     padding-top: 100px;
-
+    font-size: 25px;
+    line-height: 79px;
+    color: $primary;
+    font-family: $font-1;
     a {
         font-size: 25px;
         line-height: 79px;
@@ -153,7 +156,9 @@
         font-family: $font-1;
         transition: 0.5s ease;
         text-underline-position: under;
-
+        span{
+            text-decoration: none;
+        }
         &:hover {
             color: #ff002d;
         }
@@ -401,7 +406,8 @@
 
     .mail__mail-id {
         padding-top: 50px;
-
+        font-size: 23px;
+        line-height: 35px;
         a {
             font-size: 23px;
             line-height: 35px;
@@ -499,7 +505,8 @@
     .mail__mail-id {
         padding-top: 30px;
         padding-bottom: 20px;
-
+        font-size: 20px;
+        line-height: 30px;
         a {
             font-size: 20px;
             line-height: 30px;
